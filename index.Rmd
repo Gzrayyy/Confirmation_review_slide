@@ -117,9 +117,26 @@ style_duo_accent(
 )
 ```
 
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           cite.style = "authoryear",
+           style = "markdown",
+           hyperlink = TRUE,
+           dashed = FALSE,
+           no.print.fields=c("doi", "url", "urldate", "issn"))
+myBib <- ReadBib("./reference.bib", check = FALSE)
+```
+
+
+
+
 ## Background
 
 .blue[Text] can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+
+`r Citet(myBib, 'jacobs_death_1961')`
 
 [Link to another slide](#colors).
 
@@ -409,18 +426,15 @@ layout: false
 
 ---
 
-## Two images
+## Reference
 
-.pull-left[
-![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
-]
-
-.pull-right[
-![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
-]
+```{r results='asis', echo=FALSE}
+PrintBibliography(myBib)
+```
 
 ---
 class: center, middle
 
 # Thanks!
+
 
