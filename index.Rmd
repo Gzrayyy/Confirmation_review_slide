@@ -67,6 +67,43 @@ knitr::opts_chunk$set(
 )
 ```
 
+
+```{r logo-global, echo=FALSE, results='asis'}
+cat('
+<script>
+  // 等页面完全加载后插入 logo
+  window.addEventListener("DOMContentLoaded", function () {
+    var logo = document.createElement("img");
+    logo.src = "img/Primary logo.png";  // 建议图片别带空格
+    logo.alt = "University of Sheffield Logo";
+    logo.id = "corner-logo";
+    document.body.appendChild(logo);
+  });
+</script>
+
+<style>
+/* 通用 logo 样式 */
+#corner-logo {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  width: 300px;           /* ✅ 放大 */
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* ✅ 隐藏在反色 slide 上 */
+.remark-slide-container .inverse ~ #corner-logo,
+.remark-slide-container .remark-slide-content.inverse ~ #corner-logo {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+</style>
+')
+```
+
+
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(
@@ -78,7 +115,7 @@ style_duo_accent(
 
 ## Background
 
-Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+.blue[Text] can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
 [Link to another slide](#colors).
 
