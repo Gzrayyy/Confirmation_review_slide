@@ -71,33 +71,37 @@ knitr::opts_chunk$set(
 ```{r logo-global, echo=FALSE, results='asis'}
 cat('
 <script>
-  // 等页面完全加载后插入 logo
   window.addEventListener("DOMContentLoaded", function () {
-    var logo = document.createElement("img");
-    logo.src = "img/Primary logo.png";  // 建议图片别带空格
-    logo.alt = "University of Sheffield Logo";
-    logo.id = "corner-logo";
-    document.body.appendChild(logo);
+    const slides = document.querySelectorAll(".remark-slide-content");
+
+    slides.forEach(slide => {
+      const logoWrapper = document.createElement("div");
+      logoWrapper.className = "slide-logo";
+      const img = document.createElement("img");
+      img.src = "img/Primary logo.png";
+      img.alt = "Logo";
+      logoWrapper.appendChild(img);
+      slide.appendChild(logoWrapper);
+    });
   });
 </script>
 
 <style>
-/* 通用 logo 样式 */
-#corner-logo {
-  position: fixed;
-  top: 15px;
-  right: 25px;
-  width: 300px;           /* ✅ 放大 */
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+.slide-logo {
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  width: 250px;
+  z-index: 99;
+}
+.slide-logo img {
+  width: 100%;
+  height: auto;
 }
 
-/* ✅ 隐藏在反色 slide 上 */
-.remark-slide-container .inverse ~ #corner-logo,
-.remark-slide-container .remark-slide-content.inverse ~ #corner-logo {
-  opacity: 0 !important;
-  pointer-events: none;
+/* 自动隐藏 inverse 页面上的 logo */
+.remark-slide-content.inverse .slide-logo {
+  display: none;
 }
 </style>
 ')
