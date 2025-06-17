@@ -45,6 +45,17 @@ h1, h2, h3 {
   }
 }
 
+.remark-slide-content {
+  background-image: url("img/Primary logo.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 80px;
+  padding-top: 20px;  /* 避免文字贴太近 logo */
+}
 
+/* 反色页面不显示 logo（通常用于 .inverse） */
+.remark-slide-content.inverse {
+  background-image: none !important;
+}
   
   

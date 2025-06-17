@@ -76,7 +76,7 @@ style_duo_accent(
 )
 ```
 
-## Typography
+## Background
 
 Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
 
