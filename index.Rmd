@@ -144,7 +144,17 @@ knitr::include_graphics('img/worldpop.png')
 ```
 .small[Source: United Nation]]
 
-
+---
+## Background
+.right-column[
+These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
+which enhances life expectancy, health.
+]
 ---
 ## Background
 
@@ -184,8 +194,6 @@ venenatis urna cursus eget nunc scelerisque viverra.
 ]
 
 
-
-
 .pull-right[
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('img/Jane_Jacobs.jpg')
@@ -196,8 +204,11 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 
 ---
 
-# Left-Column Headings
+## Literature
+### The innovation of walkability
 
+
+---
 .left-column[
 ## First
 
@@ -215,18 +226,26 @@ Dolor elementum fermentum pharetra lectus arcu pulvinar.
 ]
 
 ---
-class: inverse center middle
+class: inverse middle
 
-# Topic Changing Interstitial
+.center[
+# Research questions
+]
 
 --
-
-```
-class: inverse center middle
-```
+- What is the current state of research on walkability for elderly people?
+- How do different walkability indices perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
+- How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
 
 ---
 layout: true
+
+## Methodology
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&moveToViewport=-24505,-6021,15946,10181&embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+
+---
 
 ## Blocks
 
