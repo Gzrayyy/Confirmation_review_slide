@@ -146,9 +146,7 @@ knitr::include_graphics('img/worldpop.png')
 
 
 ---
-name: colors
-
-## Colors
+## Background
 
 .left-column[
 Text color
@@ -177,19 +175,24 @@ venenatis urna cursus eget nunc scelerisque viverra.
 
 ---
 
-# Big Topic or Inverse Slides `#`
+## Literature
+### The innovation of walkability
 
-## Slide Headings `##`
+.pull-left[
+"And third, the sidewalk must have users on it fairly continuously, both to add to the number of effective eyes on the street and to induce the people in buildings along the street to watch the sidewalks in sufficient numbers. Nobody enjoys sitting on a stoop or looking out a window at an empty street. Almost nobody does such a thing. Large numbers of people entertain themselves, off and on, by watching street activity."
+`r Citet (myBib, 'jacobs_death_1961')`
+]
 
-### Sub-slide Headings `###`
 
-#### Bold Call-Out `####`
+.pull-right[
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/Jane_Jacobs.jpg')
+```
 
-This is a normal paragraph text. Only use header levels 1-4.
+.small[Jane Jacobs. Source: Wikipedia](https://en.wikipedia.org/wiki/Jane_Jacobs)
+]
+]
 
-##### Possible, but not recommended `#####`
-
-###### Definitely don't use h6 `######`
 
 ---
 
