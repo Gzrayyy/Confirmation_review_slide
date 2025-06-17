@@ -126,31 +126,24 @@ BibOptions(check.entries = FALSE,
            hyperlink = TRUE,
            dashed = FALSE,
            no.print.fields=c("doi", "url", "urldate", "issn"))
-myBib <- ReadBib("./reference.bib", check = FALSE)
+myBib <- ReadBib("./mybib.bib", check = FALSE)
 ```
 
-
-
-
 ## Background
+### Global aging challenge
 
-.blue[Text] can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+According to `r Citet(myBib, 'unitednations_world_2025')`, the global population
+aged 65 and above reached 771 million, nearly 10% of the world’s total, and is projected
+to double the number of children under 5 and nearly equal those under 12 by 2050. In
+England and Wales, this population grew by 20% between the 2011 and 2021 censuses, from
+9.2 to 11 million `r Citep(myBib, 'officefornationalstatistics_profile_2023')`.
 
-`r Citet(myBib, 'jacobs_death_1961')`
+.pull-left[
+```{r echo=FALSE, out.width='100%',fig.align='center'}
+knitr::include_graphics('img/worldpop.png')
+```
+.small[Source: United Nation]]
 
-[Link to another slide](#colors).
-
-### Lorem Ipsum
-
-Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
-Lacinia neque mollis nascetur neque urna velit bibendum. 
-Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
-
-- Dolor cubilia nostra nunc sodales
-
-- Consectetur aliquet mauris blandit
-
-- Ipsum dis nec porttitor urna sed
 
 ---
 name: colors
