@@ -184,15 +184,15 @@ venenatis urna cursus eget nunc scelerisque viverra.
 ]
 
 
+
+
 .pull-right[
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 knitr::include_graphics('img/Jane_Jacobs.jpg')
 ```
 
-.small[Jane Jacobs. Source: Wikipedia](https://en.wikipedia.org/wiki/Jane_Jacobs)
+.small[Jane Jacobs. Source: [Wikipedia](https://en.wikipedia.org/wiki/Jane_Jacobs)]
 ]
-]
-
 
 ---
 
