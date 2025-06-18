@@ -267,6 +267,48 @@ class: inverse middle
 
 ---
 ## Result
+### Disciplines distribution
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/discipline.jpg')
+```
+
+
+---
+## Result
+### Annual publication of included papers
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/year.jpg')
+```
+
+---
+## Result
+### Annual publication of included papers
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/frequency.jpg')
+```
+
+---
+## Result
+### Heatmap of walkability features
+
+.pull-left[
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+knitr::include_graphics('img/hm1.jpg')
+```
+.small[Heatmap of studies sorted by the number of walkability features used]
+]
+
+.pull-right[
+
+```{r echo=FALSE, out.width='90%', fig.align='center'}
+knitr::include_graphics('img/hm2.jpg')
+```
+.small[Heatmap of studies sorted by the number of walkability subcategories used]
+]
+
+---
+## Result
 ### Features and subcategories for measuring walkability
 <div style="transform: scale(0.35);
             transform-origin: top left;
@@ -282,10 +324,10 @@ class: inverse middle
           style="border: 1px solid #ccc; border-radius: 6px;">
   </iframe>
 </div>
+---
+## Conclusion
 
-.pull-right[
-.small[Sunburst visualizations of walkability features]
-]
+
 ---
 
 ## Reference
