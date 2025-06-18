@@ -185,7 +185,7 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 - `r Citet (myBib, "gehl_life_1987")`proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
 
 - `r Citet (myBib, "appleyard_livable_1980")` proposed the concept of ‘liveable streets’ via empirical research, highlighting the impact of transportation on the quality of community life.
-`r invisible(Citep(myBib, "frank_impacts_1994"))`
+
 - `r Citet (myBib, "frank_impacts_1994")` was the first to empirically quantify the impact of land use mix and density on walking, laying the methodological groundwork for subsequent efforts to develop standardised metrics for assessing pedestrian-friendly environments.
 
 - `r Citet (myBib, "cervero_travel_1997")` proposed a "3D" model (Density, Diversity, Design) to systematically frame the relationship between built environment and walking behaviour.
