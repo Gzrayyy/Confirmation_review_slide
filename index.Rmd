@@ -121,10 +121,12 @@ style_duo_accent(
 library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
-           cite.style = "authoryear",
+           cite.style = "authoryear", 
            style = "markdown",
            hyperlink = TRUE,
            dashed = FALSE,
+           max.names = 2,
+           longnamesfirst = FALSE,
            no.print.fields=c("doi", "url", "urldate", "issn"))
 myBib <- ReadBib("./mybib.bib", check = FALSE)
 ```
@@ -143,49 +145,22 @@ England and Wales, this population grew by 20% between the 2011 and 2021 censuse
 knitr::include_graphics('img/worldpop.png')
 ```
 .small[Source: United Nation]]
-
 ---
 ## Background
-.right-column[
+### Elderly people and walking
+
 These demographic shifts highlight the importance of encouraging elderly people to walk, 
-which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
-which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
-which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
-which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
-which enhances life expectancy, health.These demographic shifts highlight the importance of encouraging elderly people to walk, 
 which enhances life expectancy, health.
-]
+Moreover, evidence shows that the willingness to walk among
+elderly people was significantly associated with the physical characteristics of streets `r Citep(myBib, 'joseph_where_2007')`, underscoring the need to study the built environment to encourage elderly people to walk.
+
+In recent years, a great deal of research has been done on walkability, which is a key
+metric for evaluating the built environment. Despite walkability is widely used, its measurement and the datasets vary widely.
 ---
 ## Background
 
-.left-column[
-Text color
-
-[Link Color](#3)
-
-**Bold Color**
-
-_Italic Color_
-
-`Inline Code`
-]
-
-.right-column[
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Erat nam at lectus urna.
-Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
-_Eros donec ac odio tempor_ orci dapibus ultrices. 
-Id porta nibh venenatis cras sed felis eget velit aliquet.
-Aliquam id diam maecenas ultricies mi.
-Enim sit amet 
-`code_color("inline")`
-venenatis urna cursus eget nunc scelerisque viverra.
-]
-
 ---
-
-## Literature
+## Literature Review
 ### The innovation of walkability
 
 .pull-left[
@@ -204,27 +179,31 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 
 ---
 
-## Literature
-### The innovation of walkability
+## Literature Review
 
+### The innovation of walkability
+- `r Citet (myBib, "gehl_life_1987")`proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
+
+- `r Citet (myBib, "appleyard_livable_1980")` proposed the concept of ‘liveable streets’ via empirical research, highlighting the impact of transportation on the quality of community life.
+`r invisible(Citep(myBib, "frank_impacts_1994"))`
+- `r Citet (myBib, "frank_impacts_1994")` was the first to empirically quantify the impact of land use mix and density on walking, laying the methodological groundwork for subsequent efforts to develop standardised metrics for assessing pedestrian-friendly environments.
+
+- `r Citet (myBib, "cervero_travel_1997")` proposed a "3D" model (Density, Diversity, Design) to systematically frame the relationship between built environment and walking behaviour.
 
 ---
-.left-column[
-## First
+## Literature Review
 
-## Second
+### Built Environment-focused Definitions
 
-## Third
-]
+- The attribute of the built environment which can promote more walking or physical activity across different sizes of urban areas 
+`r Citep (myBib, "westenhofer_walkability_2023", .opts = list(max.names = 1))`
 
-.right-column[
-Dolor quis aptent mus a dictum ultricies egestas.
+### Perception-based Definitions
+- Visual enclosure, facade complexity, and human scale `r Citep (myBib, "jaskiewicz_pedestrian_2000")`
 
-Amet egestas neque tempor fermentum proin massa!
-
-Dolor elementum fermentum pharetra lectus arcu pulvinar.
-]
-
+### Operational / Framework-based Definitions (used to measure walkability)
+- 3D framework: Density, Diversity, Design `r Citep (myBib, "cervero_travel_1997")`
+- 5D framework: Density, Diversity, Design, Destination Accessibility, and Distance to Transit `r Citep (myBib, "ewing_travel_2010")`
 ---
 class: inverse middle
 
