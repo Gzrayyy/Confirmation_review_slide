@@ -267,6 +267,25 @@ class: inverse middle
 
 ---
 ## Result
+### Features and subcategories for measuring walkability
+<div style="transform: scale(0.35);
+            transform-origin: top left;
+            width: 1600px; 
+            height: 1200px;
+            overflow: hidden;
+            margin: 0 auto;">
+  
+  <iframe src="img/sunburst_plot.html"
+          width="1600"
+          height="1200"
+          frameborder="0"
+          style="border: 1px solid #ccc; border-radius: 6px;">
+  </iframe>
+</div>
+
+.pull-right[
+.small[Sunburst visualizations of walkability features]
+]
 ---
 
 ## Reference
