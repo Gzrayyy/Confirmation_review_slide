@@ -48,7 +48,7 @@ class: center, middle
 [Zirui Guo](https://github.com/Gzrayyy)
 
 **Supervisor**  
-[Dr Mengdie Zhuang](https://www.sheffield.ac.uk/ijc/people/mengdie-zhuang) &  
+[Dr Mengdie Zhuang](https://www.sheffield.ac.uk/ijc/people/mengdie-zhuang) &
 [Dr Suvodeep Mazumdar](https://www.sheffield.ac.uk/ijc/people/suvodeep-mazumdar) 
 
 `r Sys.Date()`
@@ -164,8 +164,7 @@ metric for evaluating the built environment. Despite walkability is widely used,
 ### The innovation of walkability
 
 .pull-left[
-"And third, the sidewalk must have users on it fairly continuously, both to add to the number of effective eyes on the street and to induce the people in buildings along the street to watch the sidewalks in sufficient numbers. Nobody enjoys sitting on a stoop or looking out a window at an empty street. Almost nobody does such a thing. Large numbers of people entertain themselves, off and on, by watching street activity."
-`r Citet (myBib, 'jacobs_death_1961')`
+"And third, the sidewalk must have users on it fairly continuously, both to add to the number of effective eyes on the street and to induce the people in buildings along the street to watch the sidewalks in sufficient numbers. Nobody enjoys sitting on a stoop or looking out a window at an empty street. Almost nobody does such a thing. Large numbers of people entertain themselves, off and on, by watching street activity." `r Citet (myBib, 'jacobs_death_1961')`
 ]
 
 
@@ -176,6 +175,8 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 
 .small[Jane Jacobs. Source: [Wikipedia](https://en.wikipedia.org/wiki/Jane_Jacobs)]
 ]
+
+.footnote[*The Death and Life of Great American Cities*]
 
 ---
 
@@ -204,6 +205,49 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 ### Operational / Framework-based Definitions (used to measure walkability)
 - 3D framework: Density, Diversity, Design `r Citep (myBib, "cervero_travel_1997")`
 - 5D framework: Density, Diversity, Design, Destination Accessibility, and Distance to Transit `r Citep (myBib, "ewing_travel_2010")`
+
+---
+## Literature Review
+
+### Walking for elderly people
+
+.pull-left[
+- Low-risk
+- Sociable
+- Reduce the risk of chronic diseases
+- Alleviate elderly people’s negative emotions
+]
+
+.pull-right[
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+knitr::include_graphics('img/eld.jpg')
+```
+
+.small[Source: [NHS](https://www.birminghamsolihull.icb.nhs.uk/news-and-events/news/recognition-awards-birmingham-and-solihull-initiatives-driving-improvements-culture-and-quality-across-nhs)]
+]
+---
+## Literature Review
+
+### Current systematic literature review on walkability
+Despite the well-documented benefits of walking for older adults, few systematic reviews have specifically focused on this demographic. `r Citet (myBib, "edwards_examining_2018")` examined walking behaviours in elderly people but focused primarily on stair use rather than broader outdoor built environment features. 
+`r Citet (myBib, "akinci_how_2022")`, on the other hand, compared how walkability has been measured for elderly people versus the general population but did not centre their review on elderly people themselves. 
+
+Thus, there is a need for a systematic literature review on elderly people.
+
+---
+## Literature Review
+
+### Walkability measurement
+- On-site field study
+  - Interview and questionnaire
+  - Field audit
+  
+- GIS data based
+  - POI, Land use, Street connectivity
+  
+- SVI
+  - Visual audit
+  - AI and Computer version
 ---
 class: inverse middle
 
@@ -213,217 +257,29 @@ class: inverse middle
 
 --
 - What is the current state of research on walkability for elderly people?
-- How do different walkability indices perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
+- How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
 - How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
 
 ---
-layout: true
-
 ## Methodology
 
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&moveToViewport=-24505,-6021,15946,10181&embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
-
 ---
-
-## Blocks
-
----
-
-### Blockquote
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
----
-
-### Code Blocks
-
-#### R Code
-
-```{r eval=FALSE}
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
-```
-
-#### JavaScript
-
-```js
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
----
-
-### More R Code
-
-```{r eval=FALSE}
-dplyr::starwars %>% dplyr::slice_sample(n = 4)
-```
-
----
-
-```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
-cli::cli_alert_success("It worked!")
-```
-
---
-
-```{r message=TRUE}
-message("Just a friendly message")
-```
-
---
-
-```{r warning=TRUE}
-warning("This could be bad...")
-```
-
---
-
-```{r error=TRUE}
-stop("I hope you're sitting down for this")
-```
-
-
----
-layout: true
-
-## Tables
-
----
-exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("tibble", quietly=TRUE)}
-tibble::as_tibble(mtcars)
-```
-
----
-
-```{r}
-knitr::kable(head(mtcars), format = 'html')
-```
-
----
-exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
-
-```{r eval=requireNamespace("DT", quietly=TRUE)}
-DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
-```
-
----
-layout: true
-
-## Lists
-
----
-
-.pull-left[
-#### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-]
-
-.pull-right[
-
-#### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-]
-
----
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
----
-
-### Nesting an ol in ul in an ol
-
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-
----
-layout: true
-
-## Plots
-
----
-
-```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
-library(ggplot2)
-(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
-```
-
----
-
-```{r plot-example-themed, eval=requireNamespace("showtext", quietly=TRUE) && requireNamespace("ggplot2", quietly=TRUE)}
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
-.footnote[Requires `{showtext}`]
-
----
-layout: false
-
-## Square image
-
-<center><img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /></center>
-
-.footnote[GitHub Octocat]
-
----
-
-### Wide image
-
-![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
-
-.footnote[Wide images scale to 100% slide width]
-
+## Result
 ---
 
 ## Reference
 
 ```{r results='asis', echo=FALSE}
-PrintBibliography(myBib)
+PrintBibliography(myBib, start = 1, end = 6)
+```
+
+---
+## Reference
+
+```{r results='asis', echo=FALSE}
+PrintBibliography(myBib, start = 7, end = 13)
 ```
 
 ---
