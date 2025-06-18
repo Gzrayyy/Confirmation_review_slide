@@ -32,7 +32,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x5d87bfc3c094c81bb1d7ae464c65d0b","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3ea1f6be3304c9998af6e2ca6ef4f20","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
     <script src="libs/editable/editable.js"></script>
@@ -124,8 +124,6 @@ elderly people was significantly associated with the physical characteristics of
 
 In recent years, a great deal of research has been done on walkability, which is a key
 metric for evaluating the built environment. Despite walkability is widely used, its measurement and the datasets vary widely.
----
-## Background
 
 ---
 ## Literature Review
@@ -225,10 +223,14 @@ class: inverse middle
 - How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
 
 ---
-## Methodology
+## Methodology framework
 
 &lt;iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&amp;moveToViewport=-24505,-6021,15946,10181&amp;embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen&gt;&lt;/iframe&gt;
 
+---
+## Methodology detail
+### Study 1
+&lt;img src="img/PRISMAframe.jpg" width="40%" style="display: block; margin: auto;" /&gt;
 ---
 ## Result
 ### Disciplines distribution
@@ -247,19 +249,25 @@ class: inverse middle
 
 ---
 ## Result
-### Heatmap of walkability features
+### Demographic datail
+- Majority of studies (n = 28, 47%) defined elderly as 65+, consistent with [United Nations (2025)](#bib-unitednations_world_2025) definition; 
+12 studies adopted a broader threshold of 60+.
 
-.pull-left[
+- A smaller subset of studies employed more detailed stratification, such as classifying them into different age bands (e.g., aged 60
+to 74, 75 to 89, and over 90), aimed to understand how the specific needs of each group affect
+their mobility and walkability in urban public spaces.
 
-&lt;img src="img/hm1.jpg" width="90%" style="display: block; margin: auto;" /&gt;
-.small[Heatmap of studies sorted by the number of walkability features used]
-]
+- A few focused on specific subgroups, such elderly people with different mobility &lt;a name=cite-chen_study_2024&gt;&lt;/a&gt;([Chen Huang et al., 2024](#bib-chen_study_2024)).
 
-.pull-right[
+---
+## Result
+### Walkability definition
+- Only 14 out of 60 studies (23%) explicitly defined walkability, while the remaining 77% used the concept without a formal definition.
 
-&lt;img src="img/hm2.jpg" width="90%" style="display: block; margin: auto;" /&gt;
-.small[Heatmap of studies sorted by the number of walkability subcategories used]
-]
+- *Health Science &amp; Gerontology* studies (n = 9) emphasized walkability as supportive environments for safe, comfortable, and active walking.
+
+- *Urban Studies &amp; Transportation*, and *Geospatial Science* papers defined walkability in terms of built environment “friendliness,” accessibility, or design features like density and diversity.
+
 
 ---
 ## Result
@@ -278,9 +286,52 @@ class: inverse middle
           style="border: 1px solid #ccc; border-radius: 6px;"&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
----
-## Conclusion
 
+
+
+---
+## Result
+### Heatmap of walkability features
+
+
+&lt;img src="img/hm1.png" width="100%" style="display: block; margin: auto;" /&gt;
+.small[Heatmap of studies sorted by the number of walkability features used]
+
+
+---
+## Result
+### Heatmap of walkability features
+
+
+&lt;img src="img/hm2.png" width="100%" style="display: block; margin: auto;" /&gt;
+.small[Heatmap of studies sorted by the number of walkability subcategories used]
+
+---
+## Result
+### Details of typical datasets
+
+&lt;img src="img/data_v.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+
+---
+## Result
+### Methodology used
+
+- Papers from Urban Studies &amp; Transportation, Geospatial Science, and Others typically aimed to propose new measurements to calculate walkability.
+
+- Studies from Health Science &amp; Gerontology typically preferred using existing methods to calculate walkability, such as Walk Score.
+
+
+---
+## Discussion and Conclusion
+
+- Oversimplified demographics: Broad age groups (60+/65+), no mobility stratification
+
+- Narrow methodology: Focus on macro-scale features, missing micro-scale factors
+
+- Missing elderly-specific frameworks: Current definitions ignore older adults' unique needs
+
+- Static approach: Neglects dynamic factors (weather, temperature, walking purpose, and time)
 
 ---
 
@@ -303,10 +354,20 @@ Kockelman](#cite-cervero_travel_1997) (1997). "Travel Demand and the
 3Ds: Density, Diversity, and Design". In: _Transportation Research Part
 D: Transport and Environment_ 2.3, pp. 199-219.
 
+&lt;a name=bib-chen_study_2024&gt;&lt;/a&gt;[Chen, Y., X. Huang, et
+al.](#cite-chen_study_2024) (2024). "A Study on Street Walkability for
+Older Adults with Different Mobility Abilities Combining Street View
+Image Recognition and Deep Learning - The Case of Chengxianjie
+Community in Nanjing (China)". In: _Computers, Environment and Urban
+Systems_ 112, p. 102151.
+
 &lt;a name=bib-edwards_examining_2018&gt;&lt;/a&gt;[Edwards, N. and J.
 Dulai](#cite-edwards_examining_2018) (2018). "Examining the
 Relationships between Walkability and Physical Activity among Older
 Persons: What about Stairs?" In: _BMC Public Health_ 18.1, p. 1025.
+
+---
+## Reference
 
 &lt;a name=bib-ewing_travel_2010&gt;&lt;/a&gt;[Ewing, R. and R.
 Cervero](#cite-ewing_travel_2010) (2010). "Travel and the Built
@@ -317,9 +378,6 @@ Association_ 76.3, pp. 265-294.
 Gary](#cite-frank_impacts_1994) (1994). "Impacts of Mixed Use and
 Density on Utilization of Three Modes of Travel: Single-Occupant
 Vehicle, Transit, and Walking". In: _TRANSPORTATION RESEARCH RECORD_.
-
----
-## Reference
 
 &lt;a name=bib-gehl_life_1987&gt;&lt;/a&gt;[Gehl, J.](#cite-gehl_life_1987) (1987).
 _Life Between Buildings_. Van Nostrand Reinhold.
@@ -341,6 +399,9 @@ Behavior_ 39.1, pp. 75-105.
 National Statistics](#cite-officefornationalstatistics_profile_2023)
 (2023). "Profile of the Older Population Living in England and Wales in
 2021 and Changes since 2011".
+
+---
+## Reference
 
 &lt;a name=bib-unitednations_world_2025&gt;&lt;/a&gt;[United
 Nations](#cite-unitednations_world_2025) (2025). _World Population

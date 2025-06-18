@@ -156,8 +156,6 @@ elderly people was significantly associated with the physical characteristics of
 
 In recent years, a great deal of research has been done on walkability, which is a key
 metric for evaluating the built environment. Despite walkability is widely used, its measurement and the datasets vary widely.
----
-## Background
 
 ---
 ## Literature Review
@@ -261,10 +259,16 @@ class: inverse middle
 - How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
 
 ---
-## Methodology
+## Methodology framework
 
 <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&moveToViewport=-24505,-6021,15946,10181&embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
+---
+## Methodology detail
+### Study 1
+```{r echo=FALSE, out.width='40%', fig.align='center'}
+knitr::include_graphics('img/PRISMAframe.jpg')
+```
 ---
 ## Result
 ### Disciplines distribution
@@ -289,23 +293,25 @@ knitr::include_graphics('img/frequency.jpg')
 
 ---
 ## Result
-### Heatmap of walkability features
+### Demographic datail
+- Majority of studies (n = 28, 47%) defined elderly as 65+, consistent with `r Citet(myBib, 'unitednations_world_2025')` definition; 
+12 studies adopted a broader threshold of 60+.
 
-.pull-left[
+- A smaller subset of studies employed more detailed stratification, such as classifying them into different age bands (e.g., aged 60
+to 74, 75 to 89, and over 90), aimed to understand how the specific needs of each group affect
+their mobility and walkability in urban public spaces.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
-knitr::include_graphics('img/hm1.jpg')
-```
-.small[Heatmap of studies sorted by the number of walkability features used]
-]
+- A few focused on specific subgroups, such elderly people with different mobility `r Citep (myBib, "chen_study_2024")`.
 
-.pull-right[
+---
+## Result
+### Walkability definition
+- Only 14 out of 60 studies (23%) explicitly defined walkability, while the remaining 77% used the concept without a formal definition.
 
-```{r echo=FALSE, out.width='90%', fig.align='center'}
-knitr::include_graphics('img/hm2.jpg')
-```
-.small[Heatmap of studies sorted by the number of walkability subcategories used]
-]
+- *Health Science & Gerontology* studies (n = 9) emphasized walkability as supportive environments for safe, comfortable, and active walking.
+
+- *Urban Studies & Transportation*, and *Geospatial Science* papers defined walkability in terms of built environment “friendliness,” accessibility, or design features like density and diversity.
+
 
 ---
 ## Result
@@ -324,23 +330,79 @@ knitr::include_graphics('img/hm2.jpg')
           style="border: 1px solid #ccc; border-radius: 6px;">
   </iframe>
 </div>
----
-## Conclusion
 
+
+
+---
+## Result
+### Heatmap of walkability features
+
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/hm1.png')
+```
+.small[Heatmap of studies sorted by the number of walkability features used]
+
+
+---
+## Result
+### Heatmap of walkability features
+
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/hm2.png')
+```
+.small[Heatmap of studies sorted by the number of walkability subcategories used]
+
+---
+## Result
+### Details of typical datasets
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics('img/data_v.jpg')
+```
+
+
+---
+## Result
+### Methodology used
+
+- Papers from Urban Studies & Transportation, Geospatial Science, and Others typically aimed to propose new measurements to calculate walkability.
+
+- Studies from Health Science & Gerontology typically preferred using existing methods to calculate walkability, such as Walk Score.
+
+
+---
+## Discussion and Conclusion
+
+- Oversimplified demographics: Broad age groups (60+/65+), no mobility stratification
+
+- Narrow methodology: Focus on macro-scale features, missing micro-scale factors
+
+- Missing elderly-specific frameworks: Current definitions ignore older adults' unique needs
+
+- Static approach: Neglects dynamic factors (weather, temperature, walking purpose, and time)
 
 ---
 
 ## Reference
 
 ```{r results='asis', echo=FALSE}
-PrintBibliography(myBib, start = 1, end = 6)
+PrintBibliography(myBib, start = 1, end = 5)
 ```
 
 ---
 ## Reference
 
 ```{r results='asis', echo=FALSE}
-PrintBibliography(myBib, start = 7, end = 13)
+PrintBibliography(myBib, start = 6, end = 12)
+```
+
+---
+## Reference
+
+```{r results='asis', echo=FALSE}
+PrintBibliography(myBib, start = 13, end = 20)
 ```
 
 ---
