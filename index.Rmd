@@ -181,7 +181,7 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 ## Literature Review
 
 ### The innovation of walkability
-- `r Citet (myBib, "gehl_life_1987")`proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
+- `r Citet (myBib, "gehl_life_1987")` proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
 
 - `r Citet (myBib, "appleyard_livable_1980")` proposed the concept of ‘liveable streets’ via empirical research, highlighting the impact of transportation on the quality of community life.
 
@@ -257,6 +257,7 @@ class: inverse middle
 - What is the current state of research on walkability for elderly people?
 - How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
 - How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
+- Is there a difference between the elderly and experts in their evaluation of walkability from the elderly perspective?
 
 ---
 ## Methodology framework
@@ -269,6 +270,37 @@ class: inverse middle
 ```{r echo=FALSE, out.width='40%', fig.align='center'}
 knitr::include_graphics('img/PRISMAframe.jpg')
 ```
+
+---
+## Methodology detail
+### Study 2
+- Ground truth
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+  
+- Semantic segmentation
+  - Employ Cityscapes and ADE20K as pretrained datasets
+  - DeepLabV3 and ResNeSt will be used to extract features from SVIs
+  
+- Walkability index model selection
+  - Based on R-square and MAE
+
+---
+## Methodology detail
+### Study 3
+- Spatial pattern
+  - Global and Local Moran's I
+
+- Feature contribution
+  - SHAP model
+
+---
+## Methodology detail
+### Study 4
+- Ground truth (for experts)
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+
 ---
 ## Result
 ### Disciplines distribution

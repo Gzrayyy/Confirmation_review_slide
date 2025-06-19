@@ -32,7 +32,7 @@
     <script src="libs/tile-view/tile-view.js"></script>
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3ea1f6be3304c9998af6e2ca6ef4f20","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xd10a03355d74d3b93c63a4b0e988112","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
     <script src="libs/editable/editable.js"></script>
@@ -54,7 +54,7 @@ class: center, middle
 [Dr Mengdie Zhuang](https://www.sheffield.ac.uk/ijc/people/mengdie-zhuang) &amp;
 [Dr Suvodeep Mazumdar](https://www.sheffield.ac.uk/ijc/people/suvodeep-mazumdar) 
 
-2025-06-18
+2025-06-19
 
 ---
 
@@ -147,7 +147,7 @@ metric for evaluating the built environment. Despite walkability is widely used,
 ## Literature Review
 
 ### The innovation of walkability
-- &lt;a name=cite-gehl_life_1987&gt;&lt;/a&gt;[Gehl (1987)](#bib-gehl_life_1987)proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
+- &lt;a name=cite-gehl_life_1987&gt;&lt;/a&gt;[Gehl (1987)](#bib-gehl_life_1987) proposed tripartite criteria of protection, comfort, and enjoyment, emphasising perception and spatial details in the walking experience.
 
 - &lt;a name=cite-appleyard_livable_1980&gt;&lt;/a&gt;[Appleyard (1980)](#bib-appleyard_livable_1980) proposed the concept of ‘liveable streets’ via empirical research, highlighting the impact of transportation on the quality of community life.
 
@@ -221,6 +221,7 @@ class: inverse middle
 - What is the current state of research on walkability for elderly people?
 - How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
 - How can the inclusion of dynamic contextual features improve walkability assessment for older adults, and what are the spatial patterns and key contributors of elderly walkability in Sheffield?
+- Is there a difference between the elderly and experts in their evaluation of walkability from the elderly perspective?
 
 ---
 ## Methodology framework
@@ -231,6 +232,37 @@ class: inverse middle
 ## Methodology detail
 ### Study 1
 &lt;img src="img/PRISMAframe.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+## Methodology detail
+### Study 2
+- Ground truth
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+  
+- Semantic segmentation
+  - Employ Cityscapes and ADE20K as pretrained datasets
+  - DeepLabV3 and ResNeSt will be used to extract features from SVIs
+  
+- Walkability index model selection
+  - Based on R-square and MAE
+
+---
+## Methodology detail
+### Study 3
+- Spatial pattern
+  - Global and Local Moran's I
+
+- Feature contribution
+  - SHAP model
+
+---
+## Methodology detail
+### Study 4
+- Ground truth (for experts)
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+
 ---
 ## Result
 ### Disciplines distribution
