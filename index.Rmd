@@ -257,7 +257,7 @@ class: inverse middle
 - What is the current state of research on walkability for elderly people?
 - How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
 - How can the inclusion of contextual features improve walkability assessments for elderly people, and what are the spatial distribution patterns and key influencing factors of the resulting dynamic walkability index?
-- Is there a difference between elderly people and experts in their evaluation of walkability from the elderly perspective?
+- Is there a difference between elderly people and experts in their evaluation of walkability from elderly people perspective?
 
 ---
 ## Methodology framework
