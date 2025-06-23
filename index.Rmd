@@ -253,16 +253,12 @@ class: inverse middle
 # Research questions
 ]
 
---
-- What is the current state of research on walkability for elderly people?
-- How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
-- How can the inclusion of contextual features improve walkability assessments for elderly people, and what are the spatial distribution patterns and key influencing factors of the resulting dynamic walkability index?
-- Is there a difference between elderly people and experts in their evaluation of walkability from elderly people perspective?
-
 ---
-## Methodology framework
-
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&moveToViewport=-24505,-6021,15946,10181&embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+class: inverse middle
+.center[
+# Research questions
+]
+- What is the current state of research on walkability for elderly people?
 
 ---
 ## Methodology detail
@@ -270,36 +266,6 @@ class: inverse middle
 ```{r echo=FALSE, out.width='40%', fig.align='center'}
 knitr::include_graphics('img/PRISMAframe.jpg')
 ```
-
----
-## Methodology detail
-### Study 2
-- Ground truth
-  - Employ TrueSkill algorithm for rating SVIs
-  - Employ ML model for rating the rest of SVIs
-  
-- Semantic segmentation
-  - Employ Cityscapes and ADE20K as pretrained datasets
-  - DeepLabV3 and ResNeSt will be used to extract features from SVIs
-  
-- Walkability index model selection
-  - Based on R-square and MAE
-
----
-## Methodology detail
-### Study 3
-- Spatial pattern
-  - Global and Local Moran's I
-
-- Feature contribution
-  - SHAP model
-
----
-## Methodology detail
-### Study 4
-- Ground truth (for experts)
-  - Employ TrueSkill algorithm for rating SVIs
-  - Employ ML model for rating the rest of SVIs
 
 ---
 ## Result
@@ -415,6 +381,59 @@ knitr::include_graphics('img/data_v.jpg')
 
 - Static approach: Neglects dynamic factors (weather, temperature, walking purpose, and time)
 
+
+---
+class: inverse middle
+.center[
+# Research questions
+]
+- What is the current state of research on walkability for elderly people?
+- How do different walkability index models perform in capturing elderly-specific needs, and which is the most suitable for this group under various scenarios?
+- How can the inclusion of contextual features improve walkability assessments for elderly people, and what are the spatial distribution patterns and key influencing factors of the resulting dynamic walkability index?
+- Is there a difference between elderly people and experts in their evaluation of walkability from elderly people perspective? (Opentional)
+
+---
+## Methodology framework
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVIPrqKFc=/?embedMode=view_only_without_ui&moveToViewport=-24505,-6021,15946,10181&embedId=618613882657" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+
+
+---
+## Methodology detail
+### Study 2
+- Ground truth
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+  
+- Semantic segmentation
+  - Employ Cityscapes and ADE20K as pretrained datasets
+  - DeepLabV3 and ResNeSt will be used to extract features from SVIs
+  
+- Walkability index model selection
+  - Based on R-square and MAE
+
+---
+## Methodology detail
+### Study 3
+- Spatial pattern
+  - Global and Local Moran's I
+
+- Feature contribution
+  - SHAP model
+
+---
+## Methodology detail
+### Study 4
+- Ground truth (for experts)
+  - Employ TrueSkill algorithm for rating SVIs
+  - Employ ML model for rating the rest of SVIs
+
+---
+## Contribution
+
+---
+## Timetable
 ---
 
 ## Reference
