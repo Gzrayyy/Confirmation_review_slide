@@ -194,15 +194,15 @@ knitr::include_graphics('img/Jane_Jacobs.jpg')
 
 ### Built Environment-focused Definitions
 
-- The attribute of the built environment which can promote more walking or physical activity across different sizes of urban areas 
-`r Citep (myBib, "westenhofer_walkability_2023", .opts = list(max.names = 1))`
+- Neighbourhood walkability reflects the degree to which **neighbourhoods are conducive to walking activity**
+`r Citep (myBib, "timmermans_associations_2021", .opts = list(max.names = 1))`
 
 ### Perception-based Definitions
-- Visual enclosure, facade complexity, and human scale `r Citep (myBib, "jaskiewicz_pedestrian_2000")`
+- The term walkability refers to those **design elements** that guarantee the **accessibility**, **comfort**, and **safety** of the urban setting for walking
+`r Citep (myBib, "bandini_social_2021")`
 
 ### Operational / Framework-based Definitions (used to measure walkability)
-- 3D framework: Density, Diversity, Design `r Citep (myBib, "cervero_travel_1997")`
-- 5D framework: Density, Diversity, Design, Destination Accessibility, and Distance to Transit `r Citep (myBib, "ewing_travel_2010")`
+- 5D framework: **Density**, **Diversity**, **Design**, **Destination Accessibility**, and **Distance to Transit** `r Citep (myBib, "ewing_travel_2010")`
 
 ---
 ## Literature Review
@@ -415,8 +415,15 @@ knitr::include_graphics('img/Study_2.jpg')
   - Employ TrueSkill algorithm for rating SVIs
   - Employ ML model for rating the rest of SVIs
 
+- Bivariate Moran's I
+  
+
 ---
-## Contribution
+## Potential contribution
+- Identify the research gap of walkability for elderly people
+- Identify contextual factors for elderly people is important
+- Quantify contextual factors on walkability for elderly people
+- Reveal expert-elderly walkability perception disconnect
 
 ---
 ## Timetable
