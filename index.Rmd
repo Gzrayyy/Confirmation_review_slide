@@ -421,8 +421,11 @@ knitr::include_graphics('img/Study_2.jpg')
 ---
 ## Potential contribution
 - Identify the research gap of walkability for elderly people
+
 - Identify contextual factors for elderly people is important
+
 - Quantify contextual factors on walkability for elderly people
+
 - Reveal expert-elderly walkability perception disconnect
 
 ---
